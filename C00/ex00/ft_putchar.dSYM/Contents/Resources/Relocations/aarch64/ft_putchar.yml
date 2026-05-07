@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/larisabuga/42-piscine/C00/ex00/ft_putchar'
+relocations:     []
+...
