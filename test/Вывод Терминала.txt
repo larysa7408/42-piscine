@@ -1,0 +1,476 @@
+Last login: Sun May 10 23:54:10 on ttys000
+larisabuga@Mac ~ % pwd
+/Users/larisabuga
+larisabuga@Mac ~ % ls
+42-piscine   Documents    IdeaProjects Music        mu_code
+Applications Downloads    Library      Pictures
+Desktop      I accept     Movies       Public
+larisabuga@Mac ~ % cd 42-piscine 
+larisabuga@Mac 42-piscine % ls
+C00                               test
+Shell00                           Вывод Терминала.txt
+larisabuga@Mac 42-piscine % cd test 
+larisabuga@Mac test % ls
+a.out
+ft_print_alphabet.c
+only_z.c
+Вывод Терминала alphabet.txt
+Вывод Терминала.txt
+larisabuga@Mac test % nano ft_print_alphabet.c 
+larisabuga@Mac test % cc -Wall -Wextra -Werror ft_print_alphabet.c
+larisabuga@Mac test % ./a.out
+abcdefghijklmnopqrstuvwxyz%                                                     larisabuga@Mac test % nano ft_print_alphabet.c                    
+larisabuga@Mac test % nano ft_print_alphabet.c
+larisabuga@Mac test % cc -Wall -Wextra -Werror ft_print_alphabet.c
+ft_print_alphabet.c:9:1: error: expected '(' after 'while'
+    9 | {
+      | ^
+ft_print_alphabet.c:18:1: error: call to undeclared function 'returt'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   18 | returt (0);
+      | ^
+2 errors generated.
+larisabuga@Mac test % nano ft_print_alphabet.c                    
+larisabuga@Mac test % cc -Wall -Wextra -Werror ft_print_alphabet.c
+ft_print_alphabet.c:10:17: error: expected ';' after expression
+   10 | write (1, &c, 1)
+      |                 ^
+      |                 ;
+ft_print_alphabet.c:8:17: error: while loop has empty body [-Werror,-Wempty-body]
+    8 | while (c <= 'z');
+      |                 ^
+ft_print_alphabet.c:8:17: note: put the semicolon on a separate line to silence this warning
+2 errors generated.
+larisabuga@Mac test % nano ft_print_alphabet.c                    
+larisabuga@Mac test % cc -Wall -Wextra -Werror ft_print_alphabet.c
+ft_print_alphabet.c:9:18: error: expected ';' after expression
+    9 |  write (1, &c, 1)
+      |                  ^
+      |                  ;
+1 error generated.
+larisabuga@Mac test % nano ft_print_alphabet.c                    
+larisabuga@Mac test % cc -Wall -Wextra -Werror ft_print_alphabet.c
+larisabuga@Mac test % ./a.out
+abcdefghijklmnopqrstuvwxyz%                                                     larisabuga@Mac test % nano ft_print_alphabet.c                    
+larisabuga@Mac test % cc -Wall -Wextra -Werror ft_print_alphabet
+clang: error: no such file or directory: 'ft_print_alphabet'
+clang: error: no input files
+larisabuga@Mac test % cc -Wall -Wextra -Werror ft_print_alphabet.c
+ft_print_alphabet.c:7:6: error: use of undeclared identifier 'a'
+    7 |  c = a;
+      |      ^
+ft_print_alphabet.c:9:13: error: use of undeclared identifier 'z'
+    9 | while (c <= z)
+      |             ^
+ft_print_alphabet.c:11:18: error: expected ';' after expression
+   11 |  write (1, &c, 1)
+      |                  ^
+      |                  ;
+ft_print_alphabet.c:16:1: error: function definition is not allowed here
+   16 | { 
+      | ^
+ft_print_alphabet.c:19:2: error: expected '}'
+   19 | }
+      |  ^
+ft_print_alphabet.c:4:1: note: to match this '{'
+    4 | {
+      | ^
+5 errors generated.
+larisabuga@Mac test % nano ft_print_alphabet.c                  
+larisabuga@Mac test % cc -Wall -Wextra -Werror ft_print_alphabet.c
+larisabuga@Mac test % ./a.out
+abcdefghijklmnopqrstuvwxyz%                                                     larisabuga@Mac test % pwd
+/Users/larisabuga/42-piscine/test
+larisabuga@Mac test % ls
+a.out
+ft_print_alphabet.c
+only_z.c
+Вывод Терминала alphabet.txt
+Вывод Терминала.txt
+larisabuga@Mac test % touch ft_print_reverse_alphabet.c
+larisabuga@Mac test % nano ft_print_reverse_alphabet.c 
+larisabuga@Mac test % cc -Wall -Wextra -Werror ft_print_revense_alphabet.c
+clang: error: no such file or directory: 'ft_print_revense_alphabet.c'
+clang: error: no input files
+larisabuga@Mac test % pwd                                                 
+/Users/larisabuga/42-piscine/test
+larisabuga@Mac test % ls
+a.out
+ft_print_alphabet.c
+ft_print_reverse_alphabet.c
+only_z.c
+Вывод Терминала alphabet.txt
+Вывод Терминала.txt
+larisabuga@Mac test % cc -Wall -Wextra -Werror ft_print_reverse_alphabet.c
+larisabuga@Mac test % ./a.out
+zyxwvutsrqponmlkjihgfedcba%                                                     larisabuga@Mac test % pwd
+/Users/larisabuga/42-piscine/test
+larisabuga@Mac test % ls   
+a.out
+ft_print_alphabet.c
+ft_print_reverse_alphabet.c
+only_z.c
+Вывод Терминала alphabet.txt
+Вывод Терминала.txt
+larisabuga@Mac test % touch ft_print_numbers
+larisabuga@Mac test % touch ft_print_numbers.c
+larisabuga@Mac test % nano ft_print_numbers.c 
+larisabuga@Mac test % cc. -Wall -Wextra -Werror ft_print_number.c 
+zsh: command not found: cc.
+larisabuga@Mac test % cc -Wall -Wextra -Werror ft_print_number.c 
+clang: error: no such file or directory: 'ft_print_number.c'
+clang: error: no input files
+larisabuga@Mac test % cc -Wall -Wextra -Werror ft_print_numbers.c
+larisabuga@Mac test % ./a.out
+0123456789%                                                                     larisabuga@Mac test % ls
+a.out                             ft_print_reverse_alphabet.c
+ft_print_alphabet.c               only_z.c
+ft_print_numbers.c                Вывод Терминала.txt
+larisabuga@Mac test % pwd
+/Users/larisabuga/42-piscine/test
+larisabuga@Mac test % ls
+a.out                             ft_print_reverse_alphabet.c
+ft_print_alphabet.c               only_z.c
+ft_print_numbers.c                Вывод Терминала.txt
+larisabuga@Mac test % touch ft_is_negative.c
+larisabuga@Mac test % nano ft_is_negative.c 
+larisabuga@Mac test % cc -Wall -Wextra -Werror ft_is_negative.c
+ft_is_negative.c:5:7: error: expected ';' at end of declaration
+    5 | char c:
+      |       ^
+      |       ;
+1 error generated.
+larisabuga@Mac test % nano ft_is_negative.c                    
+larisabuga@Mac test % cc -Wall -Wextra -Werror ft_is_negative.c
+larisabuga@Mac test % ./a.out
+larisabuga@Mac test % cc -Wall -Wextra -Werror ft_is_negative.c
+larisabuga@Mac test % ./a.out
+larisabuga@Mac test % nano ft_is_negative.c                    
+larisabuga@Mac test % cc -Wall -Wextra -Werror ft_is_negative.c
+ft_is_negative.c:13:1: error: function definition is not allowed here
+   13 | {
+      | ^
+ft_is_negative.c:24:1: error: function definition is not allowed here
+   24 | {
+      | ^
+ft_is_negative.c:27:2: error: expected '}'
+   27 | }
+      |  ^
+ft_is_negative.c:9:1: note: to match this '{'
+    9 | {
+      | ^
+ft_is_negative.c:27:2: error: expected '}'
+   27 | }
+      |  ^
+ft_is_negative.c:4:1: note: to match this '{'
+    4 | {
+      | ^
+4 errors generated.
+larisabuga@Mac test % nano ft_is_negative.c                    
+larisabuga@Mac test % cc -Wall -Wextra -Werror ft_is_negative.c
+larisabuga@Mac test % ./a.out
+N%                                                                              larisabuga@Mac test % nano ft_is_negative.c                    
+larisabuga@Mac test % cc -Wall -Wextra -Werror ft_is_negative.c
+larisabuga@Mac test % ./a.out
+N%                                                                              larisabuga@Mac test % nano ft_is_negative.c                    
+larisabuga@Mac test % cc -Wall -Wextra -Werror ft_is_negative.c
+ft_is_negative.c:8:1: error: use of undeclared identifier 'efle'
+    8 | efle
+      | ^
+1 error generated.
+larisabuga@Mac test % nano ft_is_negative.c                    
+larisabuga@Mac test % cc -Wall -Wextra -Werror ft_is_negative.c
+larisabuga@Mac test % ./a.out
+P%                                                                              larisabuga@Mac test % nano ft_is_negative.c                    
+larisabuga@Mac test % cc -Wall -Wextra -Werror ft_is_negative.c
+larisabuga@Mac test % ./a.out                                  
+N%                                                                              larisabuga@Mac test % pwd
+/Users/larisabuga/42-piscine/test
+larisabuga@Mac test % cd ..
+larisabuga@Mac 42-piscine % ls
+C00                               test
+Shell00                           Вывод Терминала.txt
+larisabuga@Mac 42-piscine % cd C00 
+larisabuga@Mac C00 % ls
+ex00 ex01 ex02 ex03 ex04
+larisabuga@Mac C00 % mkdir ex05
+larisabuga@Mac C00 % cd ex05 
+larisabuga@Mac ex05 % touch ft_print_comb.c
+larisabuga@Mac ex05 % nano ft_print_comb.c 
+larisabuga@Mac ex05 % cc -Wall -Wextra -Werror ft_print_comb.c 
+ft_print_comb.c:19:7: error: use of undeclared identifier 'q'
+   19 | write(q,&b,1);
+      |       ^
+ft_print_comb.c:20:7: error: use of undeclared identifier 'q'
+   20 | write(q,&c,1);
+      |       ^
+ft_print_comb.c:21:20: error: result of comparison against a string literal is unspecified (use an explicit string comparison function instead) [-Werror,-Wstring-compare]
+   21 | if(!(a == '7' && b == "8" && c=="9"))
+      |                    ^  ~~~
+ft_print_comb.c:21:20: error: comparison between pointer and integer ('char' and 'char *') [-Werror,-Wpointer-integer-compare]
+   21 | if(!(a == '7' && b == "8" && c=="9"))
+      |                  ~ ^  ~~~
+ft_print_comb.c:21:31: error: result of comparison against a string literal is unspecified (use an explicit string comparison function instead) [-Werror,-Wstring-compare]
+   21 | if(!(a == '7' && b == "8" && c=="9"))
+      |                               ^ ~~~
+ft_print_comb.c:21:31: error: comparison between pointer and integer ('char' and 'char *') [-Werror,-Wpointer-integer-compare]
+   21 | if(!(a == '7' && b == "8" && c=="9"))
+      |                              ~^ ~~~
+6 errors generated.
+larisabuga@Mac ex05 % nano ft_print_comb.c                   
+larisabuga@Mac ex05 % cc -Wall -Wextra -Werror ft_print_comb.c
+ft_print_comb.c:21:8: error: result of comparison against a string literal is unspecified (use an explicit string comparison function instead) [-Werror,-Wstring-compare]
+   21 | if(!(a == "7" && b == "8" && c=="9"))
+      |        ^  ~~~
+ft_print_comb.c:21:8: error: comparison between pointer and integer ('char' and 'char *') [-Werror,-Wpointer-integer-compare]
+   21 | if(!(a == "7" && b == "8" && c=="9"))
+      |      ~ ^  ~~~
+ft_print_comb.c:21:20: error: result of comparison against a string literal is unspecified (use an explicit string comparison function instead) [-Werror,-Wstring-compare]
+   21 | if(!(a == "7" && b == "8" && c=="9"))
+      |                    ^  ~~~
+ft_print_comb.c:21:20: error: comparison between pointer and integer ('char' and 'char *') [-Werror,-Wpointer-integer-compare]
+   21 | if(!(a == "7" && b == "8" && c=="9"))
+      |                  ~ ^  ~~~
+ft_print_comb.c:21:31: error: result of comparison against a string literal is unspecified (use an explicit string comparison function instead) [-Werror,-Wstring-compare]
+   21 | if(!(a == "7" && b == "8" && c=="9"))
+      |                               ^ ~~~
+ft_print_comb.c:21:31: error: comparison between pointer and integer ('char' and 'char *') [-Werror,-Wpointer-integer-compare]
+   21 | if(!(a == "7" && b == "8" && c=="9"))
+      |                              ~^ ~~~
+6 errors generated.
+larisabuga@Mac ex05 % nano ft_print_comb.c                    
+larisabuga@Mac ex05 % cc -Wall -Wextra -Werror ft_print_comb.c
+larisabuga@Mac ex05 % ./a.out
+012, 013, 014, 015, 016, 017, 018, 019, 023, 024, 025, 026, 027, 028, 029, 034, 035, 036, 037, 038, 039, 045, 046, 047, 048, 049, 056, 057, 058, 059, 067, 068, 069, 078, 079, 089, 123, 124, 125, 126, 127, 128, 129, 134, 135, 136, 137, 138, 139, 145, 146, 147, 148, 149, 156, 157, 158, 159, 167, 168, 169, 178, 179, 189, 234, 235, 236, 237, 238, 239, 245, 246, 247, 248, 249, 256, 257, 258, 259, 267, 268, 269, 278, 279, 289, 345, 346, 347, 348, 349, 356, 357, 358, 359, 367, 368, 369, 378, 379, 389, 456, 457, 458, 459, 467, 468, 469, 478, 479, 489, 567, 568, 569, 578, 579, 589, 678, 679, 689, 789%                                                                                              larisabuga@Mac ex05 % nano ft_print_comb.c                    
+larisabuga@Mac ex05 % cc -Wall -Wextra -Werror ft_print_comb.c
+ft_print_comb.c:6:7: error: expected ';' at end of declaration
+    6 | char b:
+      |       ^
+      |       ;
+ft_print_comb.c:7:7: error: expected ';' at end of declaration
+    7 | char c:
+      |       ^
+      |       ;
+ft_print_comb.c:18:4: error: expected ';' after expression
+   18 | a++:
+      |    ^
+      |    ;
+ft_print_comb.c:22:4: error: expected ';' after expression
+   22 | c++:
+      |    ^
+      |    ;
+ft_print_comb.c:24:8: error: equality comparison result unused [-Werror,-Wunused-comparison]
+   24 | if(!(a =='7', b=='8', c=='9'));
+      |      ~~^~~~~
+ft_print_comb.c:24:8: note: use '=' to turn this equality comparison into an assignment
+   24 | if(!(a =='7', b=='8', c=='9'));
+      |        ^~
+      |        =
+ft_print_comb.c:24:31: error: if statement has empty body [-Werror,-Wempty-body]
+   24 | if(!(a =='7', b=='8', c=='9'));
+      |                               ^
+ft_print_comb.c:24:31: note: put the semicolon on a separate line to silence this warning
+ft_print_comb.c:24:16: error: left operand of comma operator has no effect [-Werror,-Wunused-value]
+   24 | if(!(a =='7', b=='8', c=='9'));
+      |               ~^ ~~~
+ft_print_comb.c:30:15: error: expected expression
+   30 | ft_print_comb(void)
+      |               ^
+8 errors generated.
+larisabuga@Mac ex05 % nano ft_print_comb.c                    
+larisabuga@Mac ex05 % cc -Wall -Wextra -Werror ft_print_comb.c
+ft_print_comb.c:24:7: error: equality comparison result unused [-Werror,-Wunused-comparison]
+   24 | if(!(a=='7', b=='8', c=='9'));
+      |      ~^~~~~
+ft_print_comb.c:24:7: note: use '=' to turn this equality comparison into an assignment
+   24 | if(!(a=='7', b=='8', c=='9'));
+      |       ^~
+      |       =
+ft_print_comb.c:24:30: error: if statement has empty body [-Werror,-Wempty-body]
+   24 | if(!(a=='7', b=='8', c=='9'));
+      |                              ^
+ft_print_comb.c:24:30: note: put the semicolon on a separate line to silence this warning
+ft_print_comb.c:24:15: error: left operand of comma operator has no effect [-Werror,-Wunused-value]
+   24 | if(!(a=='7', b=='8', c=='9'));
+      |              ~^ ~~~
+ft_print_comb.c:9:7: error: variable 'a' is uninitialized when used here [-Werror,-Wuninitialized]
+    9 | while(a<='7')
+      |       ^
+ft_print_comb.c:5:7: note: initialize the variable 'a' to silence this warning
+    5 | char a;
+      |       ^
+      |        = '\0'
+ft_print_comb.c:11:7: error: variable 'b' is uninitialized when used here [-Werror,-Wuninitialized]
+   11 | while(b<='8')
+      |       ^
+ft_print_comb.c:6:7: note: initialize the variable 'b' to silence this warning
+    6 | char b;
+      |       ^
+      |        = '\0'
+ft_print_comb.c:13:7: error: variable 'c' is uninitialized when used here [-Werror,-Wuninitialized]
+   13 | while(c<='9')
+      |       ^
+ft_print_comb.c:7:7: note: initialize the variable 'c' to silence this warning
+    7 | char c;
+      |       ^
+      |        = '\0'
+ft_print_comb.c:30:15: error: expected expression
+   30 | ft_print_comb(void)
+      |               ^
+7 errors generated.
+larisabuga@Mac ex05 % nano ft_print_comb.c                    
+larisabuga@Mac ex05 % cc -Wall -Wextra -Werror ft_print_comb.c
+ft_print_comb.c:24:8: error: equality comparison result unused [-Werror,-Wunused-comparison]
+   24 |  if(!(a=='7', b=='8', c=='9'));
+      |       ~^~~~~
+ft_print_comb.c:24:8: note: use '=' to turn this equality comparison into an assignment
+   24 |  if(!(a=='7', b=='8', c=='9'));
+      |        ^~
+      |        =
+ft_print_comb.c:24:31: error: if statement has empty body [-Werror,-Wempty-body]
+   24 |  if(!(a=='7', b=='8', c=='9'));
+      |                               ^
+ft_print_comb.c:24:31: note: put the semicolon on a separate line to silence this warning
+ft_print_comb.c:24:16: error: left operand of comma operator has no effect [-Werror,-Wunused-value]
+   24 |  if(!(a=='7', b=='8', c=='9'));
+      |               ~^ ~~~
+ft_print_comb.c:9:8: error: variable 'a' is uninitialized when used here [-Werror,-Wuninitialized]
+    9 |  while(a<='7')
+      |        ^
+ft_print_comb.c:5:8: note: initialize the variable 'a' to silence this warning
+    5 |  char a;
+      |        ^
+      |         = '\0'
+ft_print_comb.c:11:8: error: variable 'b' is uninitialized when used here [-Werror,-Wuninitialized]
+   11 |  while(b<='8')
+      |        ^
+ft_print_comb.c:6:8: note: initialize the variable 'b' to silence this warning
+    6 |  char b;
+      |        ^
+      |         = '\0'
+ft_print_comb.c:13:8: error: variable 'c' is uninitialized when used here [-Werror,-Wuninitialized]
+   13 |  while(c<='9')
+      |        ^
+ft_print_comb.c:7:8: note: initialize the variable 'c' to silence this warning
+    7 |  char c;
+      |        ^
+      |         = '\0'
+ft_print_comb.c:30:15: error: expected expression
+   30 | ft_print_comb(void)
+      |               ^
+7 errors generated.
+larisabuga@Mac ex05 % nano ft_print_comb.c                    
+larisabuga@Mac ex05 % cc -Wall -Wextra -Werror ft_print_comb.c
+ft_print_comb.c:24:41: error: if statement has empty body [-Werror,-Wempty-body]
+   24 |  if(!(a == '7' && b == '8' && c == '9'));
+      |                                         ^
+ft_print_comb.c:24:41: note: put the semicolon on a separate line to silence this warning
+ft_print_comb.c:13:8: error: variable 'c' is uninitialized when used here [-Werror,-Wuninitialized]
+   13 |  while(c<='9')
+      |        ^
+ft_print_comb.c:7:8: note: initialize the variable 'c' to silence this warning
+    7 |  char c;
+      |        ^
+      |         = '\0'
+ft_print_comb.c:11:8: error: variable 'b' is uninitialized when used here [-Werror,-Wuninitialized]
+   11 |  while(b<='8')
+      |        ^
+ft_print_comb.c:6:8: note: initialize the variable 'b' to silence this warning
+    6 |  char b;
+      |        ^
+      |         = '\0'
+ft_print_comb.c:9:8: error: variable 'a' is uninitialized when used here [-Werror,-Wuninitialized]
+    9 |  while(a<='7')
+      |        ^
+ft_print_comb.c:5:8: note: initialize the variable 'a' to silence this warning
+    5 |  char a;
+      |        ^
+      |         = '\0'
+ft_print_comb.c:30:15: error: expected expression
+   30 | ft_print_comb(void)
+      |               ^
+5 errors generated.
+larisabuga@Mac ex05 % nano ft_print_comb.c                    
+larisabuga@Mac ex05 % cc -Wall -Wextra -Werror ft_print_comb.c
+ft_print_comb.c:21:41: error: if statement has empty body [-Werror,-Wempty-body]
+   21 |  if(!(a == '7' && b == '8' && c == '9'));
+      |                                         ^
+ft_print_comb.c:21:41: note: put the semicolon on a separate line to silence this warning
+ft_print_comb.c:33:15: error: expected expression
+   33 | ft_print_comb(void)
+      |               ^
+2 errors generated.
+larisabuga@Mac ex05 % nano ft_print_comb.c                    
+larisabuga@Mac ex05 % cc -Wall -Wextra -Werror ft_print_comb.c
+ft_print_comb.c:33:15: error: expected expression
+   33 | ft_print_comb(void)
+      |               ^
+1 error generated.
+larisabuga@Mac ex05 % nano ft_print_comb.c                    
+larisabuga@Mac ex05 % cc -Wall -Wextra -Werror ft_print_comb.c
+ft_print_comb.c:33:16: error: expected ';' after expression
+   33 | ft_print_comb()
+      |                ^
+      |                ;
+1 error generated.
+larisabuga@Mac ex05 % nano ft_print_comb.c                    
+larisabuga@Mac ex05 % cc -Wall -Wextra -Werror ft_print_comb.c
+larisabuga@Mac ex05 % ./a.out
+larisabuga@Mac ex05 % nano ft_print_comb.c                    
+
+  UW PICO 5.09                           File: ft_print_comb.c                           Modified  
+
+#include <unistd.h>
+
+void ft_print_comb (void)
+{
+ char a;
+ char b;
+ char c;
+
+a = '0';
+ while (a<='7')
+{
+b = a + 1; 
+ while(b<='8')
+{
+c = b + 1;  
+ while(c<='9')
+{
+ write(1,&a,1);
+ write(1,&b,1);
+ write(1,&c,1);
+ if(!(a == '7' && b == '8' && c == '9'))
+ write(1, ", ",2);
+ c++;
+}
+ b++;
+}
+ a++;
+}
+}
+ 
+ int main(void)
+{
+ft_print_comb();
+return (0);
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^G Get Help     ^O WriteOut     ^R Read File    ^Y Prev Pg      ^K Cut Text     ^C Cur Pos      
+^X Exit         ^J Justify      ^W Where is     ^V Next Pg      ^U UnCut Text   ^T To Spell     
