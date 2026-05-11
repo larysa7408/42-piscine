@@ -27,9 +27,3 @@ c = b + 1;
  a++;
 }
 }
-
- int main(void)
-{
-ft_print_comb();
-return (0);
-}
