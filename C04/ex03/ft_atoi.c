@@ -6,9 +6,11 @@
 /*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/05/21 11:24:23 by username         #+#    #+#              */
-/*   Updated: 2026/05/21 17:57:14 by username        ###   ########.fr        */
+/*   Updated: 2026/05/23 17:05:54 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
 
 int	ft_atoi(char *str)
 {
@@ -34,13 +36,12 @@ int	ft_atoi(char *str)
 	}
 	return (result * sign);
 }
-#include <stdio.h>
 
-int	main(void)
-{
-	printf("%d\n", ft_atoi("42"));
-	printf("%d\n", ft_atoi("    1234"));
-	printf("%d\n", ft_atoi(" ---+--+1234ab567"));
-	printf("%d\n", ft_atoi(" "));
-	return (0);
-}
+// int	main(void)
+// {
+// 	printf("%d\n", ft_atoi("42"));
+// 	printf("%d\n", ft_atoi("    1234"));
+// 	printf("%d\n", ft_atoi(" ---+--+1234ab567"));
+// 	printf("%d\n", ft_atoi(" "));
+// 	return (0);
+// }

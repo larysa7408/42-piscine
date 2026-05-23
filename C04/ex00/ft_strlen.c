@@ -3,12 +3,14 @@
 /*                                                       :::      ::::::::    */
 /*   ft_strlen.c                                       :+:      :+:    :+:    */
 /*                                                   +:+ +:+         +:+      */
-/*   By: lsatthof <lsatthof@student.42wolfsburg.de>#+#  +:+       +#+         */
+/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
-/*   Created: 2026/05/19 18:31:41 by lsatthof         #+#    #+#              */
-/*   Updated: 2026/05/19 18:46:10 by lsatthof        ###   ########.fr        */
+/*   Created: 2026/05/19 18:31:41 by username         #+#    #+#              */
+/*   Updated: 2026/05/23 17:04:50 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
 
 int	ft_strlen(char *str)
 {
@@ -21,8 +23,6 @@ int	ft_strlen(char *str)
 	}
 	return (i);
 }
-
-// #include <stdio.h>
 
 // int	main(void)
 // {
