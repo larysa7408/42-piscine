@@ -1,5 +1,17 @@
-void ft_div_mod(int a, int b, int *div, int *mod)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                       :::      ::::::::    */
+/*   ft_div_mod.c                                      :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: lsatthof <lsatthof@student.42wolfsburg.de>#+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/05/13 17:32:31 by lsatthof         #+#    #+#              */
+/*   Updated: 2026/05/13 17:32:31 by lsatthof        ###   ########.fr        */
+/*                                                                            */
+/* ************************************************************************** */
+
+void	ft_div_mod(int a, int b, int *div, int *mod)
 {
-*div = a / b;
-*mod = a % b;
+	*div = a / b;
+	*mod = a % b;
 }

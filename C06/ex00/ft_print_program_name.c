@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                       :::      ::::::::    */
-/*   ft_putstr.c                                       :+:      :+:    :+:    */
+/*   ft_print_program_name.c                           :+:      :+:    :+:    */
 /*                                                   +:+ +:+         +:+      */
-/*   By: lsatthof <lsatthof@student.42wolfsburg.de>#+#  +:+       +#+         */
+/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
-/*   Created: 2026/05/13 17:32:45 by lsatthof         #+#    #+#              */
-/*   Updated: 2026/05/13 17:32:45 by lsatthof        ###   ########.fr        */
+/*   Created: 2026/05/24 18:30:03 by username         #+#    #+#              */
+/*   Updated: 2026/05/24 18:48:40 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,4 +22,12 @@ void	ft_putstr(char *str)
 		write(1, &str[i], 1);
 		i++;
 	}
+}
+
+int	main(int argc, char **argv)
+{
+	(void) argc;
+	ft_putstr(argv[0]);
+	write(1, "\n", 1);
+	return (0);
 }

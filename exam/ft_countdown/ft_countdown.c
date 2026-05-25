@@ -1,25 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                       :::      ::::::::    */
-/*   ft_putstr.c                                       :+:      :+:    :+:    */
+/*   ft_countdown.c                                    :+:      :+:    :+:    */
 /*                                                   +:+ +:+         +:+      */
-/*   By: lsatthof <lsatthof@student.42wolfsburg.de>#+#  +:+       +#+         */
+/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
-/*   Created: 2026/05/13 17:32:45 by lsatthof         #+#    #+#              */
-/*   Updated: 2026/05/13 17:32:45 by lsatthof        ###   ########.fr        */
+/*   Created: 2026/05/22 08:04:27 by username         #+#    #+#              */
+/*   Updated: 2026/05/22 08:04:58 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include<unistd.h>
 
-void	ft_putstr(char *str)
+//int main(void)
+//{
+//write(1, "9876543210", 11);
+//write(1, "\n", 1);
+//return 0;
+//}
+
+
+int main(void)
 {
-	int	i;
+char c;
 
-	i = 0;
-	while (str[i] != '\0')
-	{
-		write(1, &str[i], 1);
-		i++;
-	}
+c = '9';
+while(c >= '0')
+{
+write(1, &c, 1);
+c--;
+}
+write(1, "\n", 1);
+return 0;
 }

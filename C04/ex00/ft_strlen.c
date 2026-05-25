@@ -1,25 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                       :::      ::::::::    */
-/*   ft_putstr.c                                       :+:      :+:    :+:    */
+/*   ft_strlen.c                                       :+:      :+:    :+:    */
 /*                                                   +:+ +:+         +:+      */
-/*   By: lsatthof <lsatthof@student.42wolfsburg.de>#+#  +:+       +#+         */
+/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
-/*   Created: 2026/05/13 17:32:45 by lsatthof         #+#    #+#              */
-/*   Updated: 2026/05/13 17:32:45 by lsatthof        ###   ########.fr        */
+/*   Created: 2026/05/19 18:31:41 by username         #+#    #+#              */
+/*   Updated: 2026/05/23 17:04:50 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
-void	ft_putstr(char *str)
+int	ft_strlen(char *str)
 {
 	int	i;
 
 	i = 0;
 	while (str[i] != '\0')
 	{
-		write(1, &str[i], 1);
 		i++;
 	}
+	return (i);
 }
+
+// int	main(void)
+// {
+// 	printf("%d\n", ft_strlen("Hello"));
+// 	printf("%d\n", ft_strlen(""));
+// 	printf("%d\n", ft_strlen("42 Wolfsburg"));
+// 	return (0);
+// }
