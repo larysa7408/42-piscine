@@ -1,2 +1,2 @@
 #!/bin/sh
-id -Gn $FT_USER | tr ' ' ','
+FT_USER=$USER id -G -n "$FT_USER" | tr ' ' ',' | tr -d '\n'

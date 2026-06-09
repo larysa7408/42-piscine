@@ -1,19 +1,19 @@
-#include<unistd.h>
+#include <unistd.h>
 
 void ft_putstr(char *str)
 {
-int i;
+	int i;
 
-i=0;
-while(str[i] != '\0')
-{
-write(1, &str[i], 1);
-i++;
-}
+	i=0;
+	while(str[i] != '\0')
+	{
+	write(1, &str[i], 1);
+	i++;
+	}
 }
 
 int main(void)
 {
-ft_putstr("hello\n");
-return (0);
+	ft_putstr("Hello");
+	return(0);
 }
