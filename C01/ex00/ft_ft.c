@@ -6,7 +6,7 @@
 /*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/06/10 15:36:52 by username         #+#    #+#              */
-/*   Updated: 2026/06/10 15:37:02 by username        ###   ########.fr        */
+/*   Updated: 2026/06/11 16:27:29 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,3 +14,14 @@ void	ft_ft(int *nbr)
 {
 	*nbr = 42;
 }
+
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	int	a;
+
+// 	a = 0;
+// 	ft_ft(&a);
+// 	printf("%d\n", a);
+// }
