@@ -3,10 +3,10 @@
 /*                                                       :::      ::::::::    */
 /*   ft_putstr.c                                       :+:      :+:    :+:    */
 /*                                                   +:+ +:+         +:+      */
-/*   By: lsatthof <lsatthof@student.42wolfsburg.de>#+#  +:+       +#+         */
+/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
-/*   Created: 2026/05/13 17:32:45 by lsatthof         #+#    #+#              */
-/*   Updated: 2026/05/13 17:32:45 by lsatthof        ###   ########.fr        */
+/*   Created: 2026/05/13 17:32:45 by username         #+#    #+#              */
+/*   Updated: 2026/06/12 12:39:05 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,9 @@ void	ft_putstr(char *str)
 		i++;
 	}
 }
+
+// int	main(void)
+// {
+// 	ft_putstr("Hello");
+// 	return (0);
+// }
